@@ -4,6 +4,7 @@
 #include "word.h"
 #include "wordList.h"
 using namespace std;
+const string file = "wwordsalpha.txt";
 
 int main() {
     enum Option {
@@ -12,7 +13,7 @@ int main() {
     };
     fstream fiveLfile;
     wordList listOfWords;
-    fiveLfile.open("5lwords.txt", ios::in);
+    fiveLfile.open(file, ios::in);
     if (!fiveLfile) {
         cout << "File not found";
     } else {
