@@ -47,6 +47,7 @@ bool word::contains(vector<char> chars, vector<int> indices) {
 	bool hasAll = false;
 	int matchCount = 0;
 	int matchGoal = chars.size();
+
 	for (int testLetterIndex = 0; testLetterIndex < chars.size(); testLetterIndex++) {
 		if (letterAtIndex(indices[testLetterIndex]) == chars[testLetterIndex]) {
 			return false;

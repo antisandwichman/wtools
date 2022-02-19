@@ -9,6 +9,7 @@ using namespace std;
 int main() {
     string file = "";
     bool notDoneYet = true;
+
     enum FileList {
         all5lwords = 1,
         wordle = 2
@@ -39,11 +40,11 @@ int main() {
             break;
         }
     }
-    
 
     fstream incoming;
     wordList listOfWords;
     incoming.open(file, ios::in);
+
     if (!incoming) {
         cout << "File not found";
     } else {

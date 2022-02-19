@@ -21,6 +21,11 @@ class wordList {
 		wordList getWordsThatDontContain(vector<char> excl);
 	private:
 		vector<word> listOfWords;
+		
+
+
+
+
 };
 
 #endif
